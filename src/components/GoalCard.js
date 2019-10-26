@@ -10,11 +10,12 @@ class GoalCard extends Component {
 
 
     render() {
+      //let goalC = this.props.goal;
         return (
            <div>
                <Card className = "goalCard">
                  <CardBody>
-                 <CardText>goalC</CardText>
+                 <CardText>{this.props.goalC}</CardText>
                  </CardBody>
                </Card>
           </div>

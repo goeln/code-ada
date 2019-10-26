@@ -10,13 +10,14 @@ class GoalComponent extends Component {
         super(props)
     }
 
-
     render() {
 
-      let goalCards = this.state.goalsComp.map(goal => {
+      let goalCards = this.props.goalsComp.map(goal => {
           return (
             <Col sm ="4">
-              <GoalCard goalC = {goal}/>
+              <GoalCard
+              goalC = {goal}
+            />
             </Col>
           )
         })
