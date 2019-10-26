@@ -2,7 +2,7 @@ import React, { Component } from 'react'
 import InputComponent from '../components/InputComponent'
 import MatrixComponent from '../components/MatrixComponent'
 import GoalComponent from '../components/GoalComponent'
-
+import DragDrop from '../components/DragDrop'
 
 class ProductivityPage extends Component {
   constructor(props) {
@@ -40,9 +40,10 @@ class ProductivityPage extends Component {
         />
         <MatrixComponent/>
         <DragDrop
-            goals = {this.state.goals}
+            tasks = {this.state.goals}
             inputName = "tasks"
         />
+        </>
 
     )
   }

@@ -1,20 +1,19 @@
 import React, { Component } from 'react';
 //import { Button, Input, Form } from 'reactstrap';
 import '../App.css';
-import GoalCard from '../components/GoalCard'
+// import GoalCard from '../components/GoalCard'
 export default class DragDrop extends Component {
-  state = {
-    tasks: [""]
-  }
+  // state = {
+  //   tasks: [""]
+  // }
 
-  }
 render() {
   var tasks = {
 	      goalArr: [], // to drag from goal
 	      matrixArr: [] // to drop in matri
 	    }
 
-		this.state.tasks.forEach ((task) => {
+		this.props.tasks.forEach ((task) => {
 		  tasks[task.type].push(
 		    <div key={task.taskName}
 		      className="draggable"
@@ -38,3 +37,4 @@ render() {
 	      </div>
 	    );
   	}
+  }
