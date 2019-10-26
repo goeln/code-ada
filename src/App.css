@@ -19,3 +19,13 @@ body {
   width: 275px;
   text-align: center;
 }
+.drag-container {
+  text-align: centre;
+}
+.droppable {
+
+}
+.draggable {}
+
+.inProgress{}
+  
