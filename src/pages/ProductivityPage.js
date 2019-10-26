@@ -39,7 +39,11 @@ class ProductivityPage extends Component {
             inputName = "goal"
         />
         <MatrixComponent/>
-      </>
+        <DragDrop
+            goals = {this.state.goals}
+            inputName = "goal"
+        />
+
     )
   }
 }
