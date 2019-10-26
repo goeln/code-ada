@@ -1,0 +1,21 @@
+body {
+  padding: 30px;
+}
+
+.form {
+  justify-content: center;
+}
+
+.button {
+  margin: 25px;
+
+}
+
+.input {
+   margin-left: 10px;
+}
+
+.goalCard {
+  width: 275px;
+  text-align: center;
+}
